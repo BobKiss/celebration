@@ -27,7 +27,7 @@
 						<?php // echo get_bloginfo('name'); ?>
 						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/CELEBRATION_LOGO.svg" alt="<?php echo get_bloginfo('name'); ?>">
 					</span>
-          <span class="description"><?php echo get_bloginfo('description'); ?></span>
+			<!--  <span class="description"><?php echo get_bloginfo('description'); ?></span> -->
         </div>
         <div class="column footerMenu">
           <div class="title"><?php the_field('menu_title', 'options'); ?></div>
