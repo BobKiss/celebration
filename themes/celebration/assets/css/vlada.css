@@ -16,8 +16,8 @@
 
 .FAQTemplate .faqSection .container_content .faq_name_section .hebrew {
   font-weight: 800;
-  font-size: 36px;
-  line-height: 76px;
+  font-size: 30px;
+  line-height: 60px;
   text-align: right;
   color: #333333;
 }
@@ -49,7 +49,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin: 15px 0;
+  margin: 12px 0;
   cursor: pointer;
 }
 
@@ -58,8 +58,8 @@
 }
 
 .FAQTemplate .faqSection .questionSection .question .title .name {
-  font-size: 24px;
-  line-height: 36px;
+  font-size: 20px;
+  line-height: 35px;
   text-align: right;
   color: #333333;
   transition: .3s all;
@@ -72,8 +72,8 @@
 }
 
 .FAQTemplate .faqSection .question .dropdown .text {
-  font-size: 17px;
-  line-height: 15px;
+  font-size: 15px;
+  line-height: 10px;
   text-align: right;
   color: #4F4F4F;
 }
@@ -106,7 +106,7 @@
 .FAQTemplate .faqSection .questionSection .question.active .title .name {
   transition: 0.3s all;
   font-weight: 800;
-  font-size: 25px;
+  font-size: 20px;
   line-height: 50px;
   text-align: right;
   color: #DFA29D;
@@ -183,17 +183,21 @@
 
 .aboutUsTemplate .About_Container .name {
   font-weight: 500;
-  font-size: 36px;
+  font-size: 35px;
   line-height: 36px;
   text-align: right;
   color: #333333;
+  font-family: 'Rubik', sans-serif;
+
 }
 
 .aboutUsTemplate .About_Container p {
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 18px;
+  line-height: 20px;
   text-align: right;
   color: #333333;
+  font-family: 'Rubik', sans-serif;
+
 }
 
 .aboutUsTemplate .About_Container .info_second_row {
@@ -314,12 +318,14 @@
 
 .ContactUsTemplate .hebrew {
   font-weight: 800;
-  font-size: 36px;
-  line-height: 76px;
+	font-size: 30px;
+	line-height: 60px;
   text-align: right;
   color: #333333;
 }
-
+.woocommerce-perpage{
+	display: none;
+}
 .ContactUsTemplate .line {
   width: 100%;
   height: 1px;
@@ -1317,13 +1323,15 @@ input:focus {
 div.wpforms-container-full, div.wpforms-container-full .wpforms-form * {
   width: 100% !important;
 }
-
+div.wpforms-container-full .wpforms-form input[type=date], div.wpforms-container-full .wpforms-form input[type=datetime], div.wpforms-container-full .wpforms-form input[type=datetime-local], div.wpforms-container-full .wpforms-form input[type=email], div.wpforms-container-full .wpforms-form input[type=month], div.wpforms-container-full .wpforms-form input[type=number], div.wpforms-container-full .wpforms-form input[type=password], div.wpforms-container-full .wpforms-form input[type=range], div.wpforms-container-full .wpforms-form input[type=search], div.wpforms-container-full .wpforms-form input[type=tel], div.wpforms-container-full .wpforms-form input[type=text], div.wpforms-container-full .wpforms-form input[type=time], div.wpforms-container-full .wpforms-form input[type=url], div.wpforms-container-full .wpforms-form input[type=week], div.wpforms-container-full .wpforms-form select, div.wpforms-container-full .wpforms-form textarea{
+	font-size: 14px !important;
+}
 .contactUsPage .contactForm {
   width: 30%;
 }
 
 div.wpforms-container-full .wpforms-form .wpforms-field-label {
-  font-size: 22px !important;
+  font-size: 18px !important;
 }
 
 div.wpforms-container-full .wpforms-form input[type=date],
@@ -1760,7 +1768,7 @@ transition: .5s;
 
   .woocommerce .nice-select .current,
   .woocommerce .woocommerce-perpage span {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .tabContentContainer li.productItem .button {
