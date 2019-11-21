@@ -13,6 +13,7 @@ get_header();
 <div class="template_wrapper FAQTemplate">
   <div class="faqSection">
     <div class="container_content">
+      <?php function_exists('kama_breadcrumbs') && kama_breadcrumbs(); ?>
       <div class="faq_name_section">
         <span class="hebrew">איך זה עובד?</span>
         <div class="line headerLine">

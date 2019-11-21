@@ -14,6 +14,7 @@ get_header();
 
   <div class="contactUsPage">
     <div class="container">
+      <?php if( function_exists('kama_breadcrumbs') ) kama_breadcrumbs(); ?>
       <div class="contact_name_section wow fadeInDown">
         <span class="hebrew">צור קשר </span>
         <div class="line">

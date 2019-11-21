@@ -133,7 +133,12 @@
 }
 
 .aboutUsTemplate .About_Container .content_section {
-  display: block;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .aboutUsTemplate .About_Container .info_first_row .imag_Section {

@@ -16,6 +16,7 @@ get_header();
     <div class="content_section" style="background-size:cover; background-image:url(<?= get_bloginfo('template_url') ?>/assets/images/AboutUsBack.png);">
       <div class="info_first_row">
         <div class="content">
+          <?php if( function_exists('kama_breadcrumbs') ) kama_breadcrumbs(); ?>
           <div class="title">
             <span class="name"><?php the_field('first_title_name'); ?></span>
           </div> <!-- title -->
@@ -30,7 +31,7 @@ get_header();
         </div> <!-- imag_Section -->
       </div> <!-- info_first_row -->
 
-    
+
 
 
     </div> <!-- content_section -->

@@ -519,3 +519,11 @@ return "$url' defer ";
 }
 
 add_filter( 'clean_url', 'defer_parsing_of_js', 11, 1 );
+
+/*
+ *
+ * Require Kama Breadcrumbs
+ *
+ *
+*/
+include 'inc/kama-breadcrumbs.php';
