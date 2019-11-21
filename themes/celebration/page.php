@@ -17,7 +17,7 @@ get_header();
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
-
+			<?php function_exists('kama_breadcrumbs') && kama_breadcrumbs(); ?>
 		<?php
 		while ( have_posts() ) :
 			the_post();

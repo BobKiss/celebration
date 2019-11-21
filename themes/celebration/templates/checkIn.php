@@ -13,6 +13,7 @@ get_header();
 
 
     <div class="container">
+      <?php if( function_exists('kama_breadcrumbs') ) kama_breadcrumbs(); ?>
       <div class="title">הגדרות חשבון</div>
       <div class="formSection">
         <form class="register-form" >

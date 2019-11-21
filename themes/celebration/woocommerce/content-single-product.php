@@ -35,9 +35,9 @@ if(wp_is_mobile()){
 	?>
 	<div id="product-<?php the_ID(); ?>" <?php wc_product_class( '', $product ); ?>>
 		<div class="container">
-
 			<!-- <a class="backToShop" href="<?php// echo get_permalink( woocommerce_get_page_id( 'shop' ) ); ?>"> <img src="<?php// echo get_template_directory_uri(); ?>/assets/images/icons/backArrowInProduct.png" alt=""> <?php// echo __('Back to shop', 'Celebration'); ?> </a> -->
 			<div class="productContent">
+				<?php function_exists('kama_breadcrumbs') && kama_breadcrumbs(); ?>
 				<div class="title">
 					<div class="name"><?php woocommerce_template_single_title(); ?></div>
 					<?php
@@ -191,6 +191,7 @@ if ( post_password_required() ) {
 
 	<div>
 	<div class="container">
+		<?php function_exists('kama_breadcrumbs') && kama_breadcrumbs(); ?>
 		<a class="backToShop" href="<?php echo get_permalink( woocommerce_get_page_id( 'shop' ) ); ?>"> <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/backArrowInProduct.png" alt=""> <?php echo __('Back to shop', 'Celebration'); ?> </a>
 		<div class="productContent">
 			<div class="galleryPart">
