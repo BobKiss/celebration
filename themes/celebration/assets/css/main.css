@@ -771,8 +771,16 @@ body.mobileMenuActive {
 .popupCartBlock.activeMenu{
   padding: 10px;
 }
-#woo_pp_ec_button{
-  display: none;
+.woocommerce-mini-cart__buttons,
+.woocommerce-mini-cart__total{
+  text-align: center;
+}
+.productItem .product_type_simple{
+  display: flex;
+  justify-content: center;
+}
+.single-prods-container .productsList .productItem .button::before{
+  content: 'הוספה לסל';
 }
 .site-header .mobileHeader.activeMenu .fullscreenMenu {
   display: -webkit-flex;
@@ -1545,7 +1553,6 @@ div.wpforms-container-full .wpforms-form .wpforms-field-label.wpforms-label-hide
   color: #f1c5c5;
 }
 
-
 .woocommerce ul.products.productsList li.product .button {
   color: #333;
   background-color: #fff;
@@ -1555,11 +1562,28 @@ div.wpforms-container-full .wpforms-form .wpforms-field-label.wpforms-label-hide
   text-align: center;
   height: 32px;
   align-items: center;
-  width: 110px;
+  width: 135px;
   line-height: 17px;
   border-radius: 5px;
   border: 1px solid #ccc;
   align-self: center;
+}
+.woocommerce form .form-row input.input-text, .woocommerce form .form-row textarea,
+.select2-container[dir=rtl] .select2-selection--single .select2-selection__rendered{
+  padding-right: 10px;
+}
+.single-prods-container .productsList li.product .button{
+  font-size: 0 !important;
+}
+.single-prods-container .productsList .productItem .button::before,
+.single-prods-container .productsList .productItem .button:after{
+  font-size: 12px !important;
+}
+.single-prods-container .productsList .productItem .button:hover::before{
+  content: 'נוסף בהצלחה לסל';
+}
+.single-prods-container .productsList .productItem .button:hover:after{
+  content: '\f00c' !important;
 }
 .shop.productsList .productItem .addToCart,
 .woocommerce ul.products.categoryList li.product .button {
