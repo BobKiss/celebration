@@ -65,7 +65,9 @@ do_action( 'woocommerce_before_main_content' );
     	</header>
     	<?php
     	if ( (woocommerce_product_loop() && !$children) || is_shop() || is_search()) {
-
+        ?>
+        <div class="single-prods-container">
+        <?php
     		/**
     		 * Hook: woocommerce_before_shop_loop.
     		 *
@@ -100,6 +102,9 @@ do_action( 'woocommerce_before_main_content' );
     		 * @hooked woocommerce_pagination - 10
     		 */
     		do_action( 'woocommerce_after_shop_loop' );
+        ?>
+        </div>
+        <?
     	} else if( $children ) {
         ?>
         <ul class="products shop productsList categoryList columns-8">

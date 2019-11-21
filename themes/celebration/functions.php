@@ -236,6 +236,12 @@ function ps_selectbox() {
     <?php
 }
 
+add_filter( 'woocommerce_checkout_fields' , 'custom_override_checkout_fields' );
+
+function custom_override_checkout_fields( $fields ) {
+    unset($fields['billing']['billing_address_2']);
+    return $fields;
+}
 add_action( 'pre_get_posts', 'ps_pre_get_products_query' );
 function ps_pre_get_products_query( $query ) {
 		$default_per_page = 8;
