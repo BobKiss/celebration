@@ -14,6 +14,7 @@ get_header();
 		<main id="main" class="site-main">
 
 			<section class="error-404 not-found">
+				<?php function_exists('kama_breadcrumbs') && kama_breadcrumbs(); ?>
 					<h1>האתר יעלה בקרוב לאוויר!</h1>
 					<div class="presentBlock">
 						<img src="<?php bloginfo('template_directory'); ?>/assets/images/UpperPresent.webp" alt="">
