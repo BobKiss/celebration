@@ -1,9 +1,0 @@
-deployment:
-  tasks:
-    - export WPC=/home2/celebrationbyore/public_html/wp-content/
-    - /bin/cp -r $WPC/uploads olduploads
-    - /bin/rm -rf $WPC
-    - /bin/mkdir $WPC
-    - /bin/cp -r * $WPC
-    - /bin/cp -r olduploads/* $WPC/uploads
-    - /bin/rm -rf olduploads
