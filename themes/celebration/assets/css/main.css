@@ -760,7 +760,12 @@ body.mobileMenuActive {
 .site-header .fullscreenMenu {
   display: none;
 }
-
+.popupCartBlock.activeMenu{
+  padding: 10px;
+}
+#woo_pp_ec_button{
+  display: none;
+}
 .site-header .mobileHeader.activeMenu .fullscreenMenu {
   display: -webkit-flex;
   display: -ms-flex;

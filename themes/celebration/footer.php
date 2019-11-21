@@ -16,10 +16,10 @@
 	<footer id="colophon" class="site-footer">
 
     <div class="container footerContainer wow fadeInUp">
-			<div class="signUpSection">
-				<a class="login" href="<?php echo get_permalink( wc_get_page_id( 'myaccount' ) ); ?>"><?php echo __('Sign In', 'Celebration'); ?></a>
-				<a class="register" href=""><?php echo __('Sign Up', 'Celebration'); ?></a>
-			</div>
+			<!-- <div class="signUpSection">
+				<a class="login" href="<?php// echo get_permalink( wc_get_page_id( 'myaccount' ) ); ?>"><?php// echo __('Sign In', 'Celebration'); ?></a>
+				<a class="register" href=""><?php// echo __('Sign Up', 'Celebration'); ?></a>
+			</div> -->
       <div class="row">
 
         <div class="column logo">
